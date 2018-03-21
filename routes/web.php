@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('productos');
+})->name('home');
+
+Route::get('catalogo', function () {
+    return view('productos');
+})->name('productos');
+
+Route::get('detalle-producto', function () {
+    return view('detalle');
+})->name('detalle');
+
+Route::get('haz-contacto', function () {
+    return view('contacto');
+})->name('contacto');
