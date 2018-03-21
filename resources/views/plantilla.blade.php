@@ -105,7 +105,7 @@
 				<div class="menu-nav">
 					<span class="menu-header">Menu <i class="fa fa-bars"></i></span>
 					<ul class="menu-list">
-						<li><a href="#">Inicio</a></li>
+						<li><a href="{{ route('home') }}">Inicio</a></li>
 						<li><a href="{{ route('productos') }}">Tienda</a></li>
 						<li><a href="{{ route('contacto') }}">Contacto</a></li>
 					</ul>
@@ -121,7 +121,7 @@
 	<div id="breadcrumb">
 		<div class="container">
 			<ul class="breadcrumb">
-				<li><a href="#">Home</a></li>
+				<li><a href="{{ route('home') }}">Home</a></li>
 				<li class="active">Blank</li>
 			</ul>
 		</div>
