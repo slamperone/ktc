@@ -17,8 +17,6 @@ Route::get('catalogo', 'CategoryController@index')->name('productos');
 
 Route::get('categoria/{id}','CategoryController@categoria');
 
-Route::get('detalle-producto', function () {
-    return view('detalle');
-})->name('detalle');
+Route::get('detalle-producto/{id}', 'ProductController@detalle')->name('detalle');
 
 Route::get('haz-contacto', 'CategoryController@contacto')->name('contacto');

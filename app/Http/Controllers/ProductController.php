@@ -15,14 +15,19 @@ class ProductController extends Controller
     }
 
 
-    public function categoria($cual){
+    public function detalle($cual){
 
-    	$categorias = Category::orderBy('nombre', 'desc')
+    	$categorias = Category::orderBy('nombre', 'asc')
                 ->get();
 
-    	$productos = Product::orderBy('categoria', 'asc')
+        $producto = Product::leftjoin('manufacturer', 'products.fabricante', '=', 'manufacturer.id')
+                ->leftjoin('categories', 'products.categoria', '=', 'categories.id')
+                ->orderBy('products.id', 'asc')
+                ->where('products.id',$cual)
+                ->select('products.*', 'manufacturer.nombre AS marca', 'categories.nombre AS categoria')
                 ->get();
 
-    	return view('productos',compact('categorias','productos'));
+
+        return view('detalle',compact('categorias','producto'));
     }
 }

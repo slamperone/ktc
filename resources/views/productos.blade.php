@@ -25,7 +25,7 @@
 							<!-- Product Single -->
 							<div class="col-md-4 col-sm-6 col-xs-6">
 								<div class="product product-single">
-									<a href="{{ url('categoria',$prod->id) }}">
+									<a href="{{ url('detalle-producto',$prod->id) }}">
 									<div class="product-thumb">
 										<div class="product-label">
 
@@ -36,7 +36,7 @@
 									<div class="product-body">
 										<h2 class="product-name">
 											<h2 class="product-name">
-												<a href="{{ url('categoria',$prod->id) }}">
+												<a href="{{ url('detalle-producto',$prod->id) }}">
 										<span class="product-old-price">Nombre: </span>{{ $prod->nombre }}</a></h2>
 										<span class="product-old-price">SKU: </span><h5>{{ $prod->sku }}</h5>
 										<p><span class="product-old-price">Descripción: </span><br />
