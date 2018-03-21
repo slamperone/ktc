@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('productos');
-})->name('home');
+Route::get('/', 'CategoryController@index')->name('home');
 
 Route::get('catalogo', 'CategoryController@index')->name('productos');
+
+Route::get('catalogo/{id}','CategoryController@index')->name('productos');
 
 Route::get('detalle-producto', function () {
     return view('detalle');

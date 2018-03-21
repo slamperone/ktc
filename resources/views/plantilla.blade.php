@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>Proveedor de bicis sa</title>
+	<title>{{config('app.name','laravel')}}</title>
 
 	<!-- Google font -->
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
@@ -51,20 +51,6 @@
 						</a>
 					</div>
 					<!-- /Logo -->
-
-					<!-- Search -->
-					<div class="header-search">
-						<form>
-							<input class="input search-input" type="text" placeholder="Enter your keyword">
-							<select class="input search-categories">
-								<option value="0">All Categories</option>
-								<option value="1">Category 01</option>
-								<option value="1">Category 02</option>
-							</select>
-							<button class="search-btn"><i class="fa fa-search"></i></button>
-						</form>
-					</div>
-					<!-- /Search -->
 				</div>
 				<div class="pull-right">
 					<ul class="header-btns">
@@ -92,11 +78,10 @@
 				<div class="category-nav show-on-click">
 					<span class="category-header">Categorias <i class="fa fa-list"></i></span>
 					<ul class="category-list">
-						<li><a href="#">Men’s Clothing</a></li>
-						<li><a href="#">Computer & Office</a></li>
-						<li><a href="#">Consumer Electronics</a></li>
-						<li><a href="#">Bags & Shoes</a></li>
-						<li><a href="#">View All</a></li>
+		@foreach ($categorias as $cat)
+						<li><a href="#">{{$cat->nombre}}</a></li>
+		@endforeach
+
 					</ul>
 				</div>
 				<!-- /category nav -->

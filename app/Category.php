@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    protected $fillable = ['nombre','desc','foto'];
+    protected $fillable = ['id','nombre','desc','foto'];
 }
