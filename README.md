@@ -14,10 +14,10 @@
 
 
   **Instalación**
-	- Copiar contenido de /public/* en carpeta publica del servidor web.
-	- Copiar resto de archivos/carpetas fuera de la carpeta publica (un nivel).
-	- Importar bdd /resources/dev/ktc_2018-03-21.sql.
-	- Configurar variables de entorno (varía en cada web server).
+	- Copiar contenido de /public/ en carpeta publica del servidor web
+	- Copiar resto de archivos/carpetas fuera de la carpeta publica (un nivel)
+	- Importar bdd /resources/dev/ktc_2018-03-21.sql
+	- Configurar variables de entorno (varía en cada web server)
 
 
 -------
