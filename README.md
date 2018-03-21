@@ -1,9 +1,14 @@
+
 ## Reto técnico catálogo de refacciones
   **Requerimientos**
   * -PHP 7.x >
   * -mariadb 10.x >
   * -Laravel 5.x >
   * -Apache 2.x
+
+
+----------
+
 
 
   **Archivos incluidos**
@@ -22,25 +27,23 @@
 
 -------
 
-   ```Mediante migrations de Laravel se generaron registros para la tabla productos, las otras dos tablas (manufacturer & categories) se llenaron de forma manual.
+   Mediante migrations de Laravel se generaron registros para la tabla productos, las otras dos tablas (manufacturer & categories) se llenaron de forma manual.
 
-   Usando artisan se generaron dos controladores y dos modelos que consumen la BDD basada en mariadbb y mediante objetos de PHP alimentan el frontend, está estructurada para tener controladores en cada sección del sitio y que cada uno de estos se encargue de hacer gestión independiente (catalogo & productos) para que de esta forma se facilmente esclable, se puede agregar tantos módulos como sean necesarios sin necesidad de afectar lo ya desarrollado.```
-
-
-
-	![Catalogo de categorias](https://develupme.com/ktc-home.png)
+   Usando artisan se generaron dos controladores y dos modelos que consumen la BDD basada en mariadbb y mediante objetos de PHP alimentan el frontend, está estructurada para tener controladores en cada sección del sitio y que cada uno de estos se encargue de hacer gestión independiente (catalogo & productos) para que de esta forma se facilmente esclable, se puede agregar tantos módulos como sean necesarios sin necesidad de afectar lo ya desarrollado.
 
 
-	![Menú de categorias](https://develupme.com/ktc-menu.png)
+![Catálogo de categorias](https://develupme.com/ktc-home.png)
+
+![Menú de categorias](https://develupme.com/ktc-menu.png)
 
 
-	![Productos filtrados por categoria](https://develupme.com/ktc-cats.png)
+![Productos filtrados por categoria](https://develupme.com/ktc-cats.png)
 
 
-	![Pagina de detalle del producto](https://develupme.com/ktc-detalle.png)
+![Pagina de detalle del producto](https://develupme.com/ktc-detalle.png)
 
 
-	![Captura de la tabla productos llenada mediante la clase $faker](https://develupme.com/ktc-detalle.png)
+![Captura de la tabla productos llenada mediante la clase $faker](https://develupme.com/ktc-bdd.png)
 
 
 
