@@ -13,20 +13,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
 
 	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="{!! asset('css/bootstrap.min.css') !!}" />
 
 	<!-- Slick -->
-	<link type="text/css" rel="stylesheet" href="css/slick.css" />
-	<link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+	<link type="text/css" rel="stylesheet" href="{!! asset('css/slick.css') !!}" />
+	<link type="text/css" rel="stylesheet" href="{!! asset('css/slick-theme.css') !!}" />
 
 	<!-- nouislider -->
-	<link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+	<link type="text/css" rel="stylesheet" href="{!! asset('css/nouislider.min.css') !!}" />
 
 	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="{!! asset('css/font-awesome.min.css') !!}">
 
 	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<link type="text/css" rel="stylesheet" href="{!! asset('css/style.css') !!}" />
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,7 +79,7 @@
 					<span class="category-header">Categorias <i class="fa fa-list"></i></span>
 					<ul class="category-list">
 		@foreach ($categorias as $cat)
-						<li><a href="#">{{$cat->nombre}}</a></li>
+						<li><a href="{{ url('categoria',$cat->id) }}">{{$cat->nombre}}</a></li>
 		@endforeach
 
 					</ul>
@@ -101,17 +101,6 @@
 		<!-- /container -->
 	</div>
 	<!-- /NAVIGATION -->
-
-	<!-- BREADCRUMB -->
-	<div id="breadcrumb">
-		<div class="container">
-			<ul class="breadcrumb">
-				<li><a href="{{ route('home') }}">Home</a></li>
-				<li class="active">Blank</li>
-			</ul>
-		</div>
-	</div>
-	<!-- /BREADCRUMB -->
 
 	<!-- section -->
 	<div class="section">
@@ -226,12 +215,12 @@
 	<!-- /FOOTER -->
 
 	<!-- jQuery Plugins -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/nouislider.min.js"></script>
-	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="{!! asset('js/jquery.min.js') !!}"></script>
+	<script src="{!! asset('js/bootstrap.min.js') !!}"></script>
+	<script src="{!! asset('js/slick.min.js') !!}"></script>
+	<script src="{!! asset('js/nouislider.min.js') !!}"></script>
+	<script src="{!! asset('js/jquery.zoom.min.js') !!}"></script>
+	<script src="{!! asset('js/main.js') !!}"></script>
 
 </body>
 

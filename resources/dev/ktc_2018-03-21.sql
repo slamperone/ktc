@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.5.5-10.2.13-MariaDB)
 # Database: ktc
-# Generation Time: 2018-03-21 14:07:50 +0000
+# Generation Time: 2018-03-21 16:05:35 +0000
 # ************************************************************
 
 
@@ -39,13 +39,13 @@ LOCK TABLES `categories` WRITE;
 INSERT INTO `categories` (`id`, `nombre`, `desc`, `foto`)
 VALUES
 	(00001,'Pedales','copy bonito aqui ','pedales-top.jpg'),
-	(00002,'Rines','copy bonito aqui ','rines.png'),
+	(00002,'Rines','copy bonito aqui ','rines.jpg'),
 	(00003,'Cambios','copy bonito aqui ','cambiosTop.jpg'),
-	(00004,'Asientos','copy bonito aqui ','asient.png'),
+	(00004,'Asientos','copy bonito aqui ','asient.jpg'),
 	(00005,'Desviadores','copy bonito aqui ','desv.jpg'),
 	(00006,'Frenos','copy bonito aqui ','frenocat.jpg'),
-	(00007,'Llantas','copy bonito aqui ','llantasTop.png'),
-	(00008,'Manubrios','copy bonito aqui ','manu.png'),
+	(00007,'Llantas','copy bonito aqui ','llantasTop.jpg'),
+	(00008,'Manubrios','copy bonito aqui ','manu.jpg'),
 	(00009,'Camaras','copy bonito aqui ','camars.jpg'),
 	(00010,'Cadenas','copy bonito aqui ','cadenasTop.jpg'),
 	(00011,'Lubricantes','copy bonito aqui ','aceites.jpg'),

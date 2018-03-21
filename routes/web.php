@@ -15,12 +15,10 @@ Route::get('/', 'CategoryController@index')->name('home');
 
 Route::get('catalogo', 'CategoryController@index')->name('productos');
 
-Route::get('catalogo/{id}','CategoryController@index')->name('productos');
+Route::get('categoria/{id}','CategoryController@categoria');
 
 Route::get('detalle-producto', function () {
     return view('detalle');
 })->name('detalle');
 
-Route::get('haz-contacto', function () {
-    return view('contacto');
-})->name('contacto');
+Route::get('haz-contacto', 'CategoryController@contacto')->name('contacto');

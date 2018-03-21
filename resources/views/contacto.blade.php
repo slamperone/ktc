@@ -2,6 +2,6 @@
 
 @section('contenido')
 
-	<h1>Formulario de contacto raza</h1>
+	<h1>Formulario de contacto</h1>
 
 @stop
