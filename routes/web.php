@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('productos');
 })->name('home');
 
-Route::get('catalogo', function () {
-    return view('productos');
-})->name('productos');
+Route::get('catalogo', 'CategoryController@index')->name('productos');
 
 Route::get('detalle-producto', function () {
     return view('detalle');
