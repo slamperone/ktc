@@ -47,7 +47,7 @@
 					<!-- Logo -->
 					<div class="header-logo">
 						<a class="logo" href="#">
-							<img src="./img/logo.png" alt="">
+							<img src="{!! asset('img/logo.png') !!}" alt="">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -127,7 +127,7 @@
 						<!-- footer logo -->
 						<div class="footer-logo">
 							<a class="logo" href="#">
-		            <img src="./img/logo.png" alt="">
+		            <img src="{!! asset('img/logo.png') !!}" alt="">
 		          </a>
 						</div>
 						<!-- /footer logo -->

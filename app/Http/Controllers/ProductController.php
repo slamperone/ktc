@@ -24,7 +24,7 @@ class ProductController extends Controller
                 ->leftjoin('categories', 'products.categoria', '=', 'categories.id')
                 ->orderBy('products.id', 'asc')
                 ->where('products.id',$cual)
-                ->select('products.*', 'manufacturer.nombre AS marca', 'categories.nombre AS categoria')
+                ->select('products.*', 'manufacturer.nombre AS marca', 'manufacturer.origen AS pais', 'categories.nombre AS categoria')
                 ->get();
 
 

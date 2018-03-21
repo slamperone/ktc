@@ -1,7 +1,7 @@
 @extends('plantilla')
 
 @section('contenido')
-	<h1>Detalle de producto raza</h1>
+	<h1>Detalle de producto</h1>
 	<!--  Product Details -->
 				<div class="product product-details clearfix">
 					<div class="col-md-6">
@@ -27,6 +27,7 @@
 							<h2 class="product-name">{{$producto[0]->nombre}}</h2>
 							<p><strong>SKU:</strong> {{$producto[0]->sku}}</p>
 							<p><strong>Marca:</strong> {{$producto[0]->marca}}</p>
+							<p><strong>País de origen:</strong> {{$producto[0]->pais}}</p>
 							<p><strong>Categoria:</strong> {{$producto[0]->categoria}}</p>
 							<p><a  href="{{ URL::to('/ficha/'. $producto[0]->fichaTecnica)  }}"  download="ficha-tecnica-{{$producto[0]->nombre}}.pdf">
 								<button class="main-btn icon-btn"><i class="fa fa-file-pdf-o"></i>
